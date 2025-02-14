@@ -1,7 +1,18 @@
+import { BrowserRouter, Router, Route } from "react-router-dom";
+import { useDataContext, DataProvider } from "./context/DataContext";
+
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <>
+      <DataProvider>
+        <BrowserRouter>
+          <Router>
+            <Route />
+          </Router>
+        </BrowserRouter>
+      </DataProvider>
+    </>
+  );
+};
 
-export default App
+export default App;
