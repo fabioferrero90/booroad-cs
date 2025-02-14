@@ -1,4 +1,4 @@
-const Header = (headerMenu) => {
+const Header = ({ headerMenu }) => {
   console.log(headerMenu);
 
   return (
