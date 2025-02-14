@@ -11,8 +11,9 @@ const DataProvider = ({ children }) => {
     console.log('No users found')
   }
 
+
   return (
-    <DataContext.Provider value={{data}}>
+    <DataContext.Provider value={{ data }}>
       {children}
     </DataContext.Provider>
   )
