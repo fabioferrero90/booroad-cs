@@ -5,13 +5,16 @@ const headerMenu = [
    { route: "/", name: "Home", key: "home" },
    { route: "/travels", name: "Viaggi", key: "travels" },
    { route: "/customers", name: "Anagrafiche Clienti", key: "customers" },
+];
+
+const adminHeaderMenu = [
    { route: "/users", name: "Anagrafiche Accompagnatori", key: "users" }
- ];
+]
 
 function DefaultLayout() {
    return (
       <>
-         <Header headerMenu={headerMenu}/>
+         <Header headerMenu={ headerMenu} adminHeaderMenu = { adminHeaderMenu }/>
          <main>
             <Outlet />
          </main>

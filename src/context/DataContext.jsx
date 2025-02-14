@@ -1,12 +1,14 @@
-import { useContext, createContext } from 'react';
+import { useState, useContext, createContext } from 'react';
 const DataContext = createContext();
 import db from '../data/db.json';
 
 const DataProvider = ({ children }) => {
 
+  const [isAdmin, setIsAdmin] = useState(true);
+
   const data = JSON.parse(JSON.stringify(db));
   return (
-    <DataContext.Provider value={{ data }}>
+    <DataContext.Provider value={{ data, isAdmin, setIsAdmin }}>
       {children}
     </DataContext.Provider>
   )
