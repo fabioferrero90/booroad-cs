@@ -1,4 +1,6 @@
-const Header = (headerMenu) => {
+import { NavLink } from "react-router-dom";
+
+const Header = ({headerMenu}) => {
 
   console.log(headerMenu);
 
