@@ -2,8 +2,6 @@ import { NavLink } from "react-router-dom";
 import { useDataContext } from "../context/DataContext"; 
 
 const Header = ({ headerMenu , adminHeaderMenu }) => {
-  console.log(headerMenu);
-
   const { isAdmin } = useDataContext();
 
   return (

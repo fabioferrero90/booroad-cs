@@ -4,7 +4,7 @@ import db from '../data/db.json';
 
 const DataProvider = ({ children }) => {
 
-  const [isAdmin, setIsAdmin] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(true);
 
   const data = JSON.parse(JSON.stringify(db));
   return (

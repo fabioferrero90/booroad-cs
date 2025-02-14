@@ -2,6 +2,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useDataContext, DataProvider } from "./context/DataContext";
 import DefaultLayout from "./layout/DefaultLayout";
 import Home from "./pages/Home";
+import Travels from "./pages/Travels";
+import Customers from "./pages/Customers";
+import Users from "./pages/Users";
 
 const App = () => {
   return (
@@ -11,6 +14,9 @@ const App = () => {
           <Routes>
             <Route Component={DefaultLayout}>
               <Route path="/" Component={Home} />
+              <Route path="/travels" Component={Travels} />
+              <Route path="/customers" Component={Customers} />
+              <Route path="/users" Component={Users} />
             </Route>
           </Routes>
         </BrowserRouter>
