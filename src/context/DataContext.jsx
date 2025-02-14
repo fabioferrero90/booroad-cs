@@ -7,7 +7,6 @@ const DataProvider = ({ children }) => {
   const data = JSON.parse(JSON.stringify(db));
 
   console.log(data.users)
-  console.log(data.posts)
 
 
 
