@@ -1,0 +1,108 @@
+{
+  "customers_data": [
+    {
+      "firstname": "Mario",
+      "lastname": "Rossi",
+      "tax_id": "RSSMRA80A01H501Z",
+      "phone_number": "+393401234567",
+      "mail": "mario.rossi@example.com",
+      "secondary_contact": "+393489876543",
+      "secondary_contact_type": "WhatsApp"
+    },
+    {
+      "firstname": "Giulia",
+      "lastname": "Verdi",
+      "tax_id": "VRDGLL85B45L219H",
+      "phone_number": "+393331112233",
+      "mail": "giulia.verdi@example.com",
+      "secondary_contact": "giulia.verdi@work.com",
+      "secondary_contact_type": "Email"
+    },
+    {
+      "firstname": "Andrea",
+      "lastname": "Ferrari",
+      "tax_id": "FRRNDR90C30F205K",
+      "phone_number": "+393512345678",
+      "mail": "andrea.ferrari@example.com",
+      "secondary_contact": "+393567890123",
+      "secondary_contact_type": "Telegram"
+    },
+    {
+      "firstname": "Elisa",
+      "lastname": "Galli",
+      "tax_id": "GLLELS95D55H501Y",
+      "phone_number": "+393612345678",
+      "mail": "elisa.galli@example.com",
+      "secondary_contact": "elisa.galli@company.com",
+      "secondary_contact_type": "Email"
+    }
+  ],
+  "travel_customers": [
+    { "travel_id": 1, "customer_id": 1 },
+    { "travel_id": 1, "customer_id": 2 },
+    { "travel_id": 2, "customer_id": 1 },
+    { "travel_id": 3, "customer_id": 3 },
+    { "travel_id": 3, "customer_id": 4 }
+  ],
+  "travels": [
+    {
+      "id_viaggio": 1,
+      "start_date": "2025-06-10T08:00:00Z",
+      "end_date": "2025-06-20T22:00:00Z",
+      "destination_id": 1,
+      "abstract": "Visita alle principali attrazioni turistiche, escursioni e cene tipiche."
+    },
+    {
+      "id_viaggio": 2,
+      "start_date": "2025-07-05T09:00:00Z",
+      "end_date": "2025-07-15T21:00:00Z",
+      "destination_id": 2,
+      "abstract": "Tour guidato nelle zone storiche con esperienze culinarie locali."
+    },
+    {
+      "id_viaggio": 3,
+      "start_date": "2025-08-01T10:00:00Z",
+      "end_date": "2025-08-12T20:00:00Z",
+      "destination_id": 3,
+      "abstract": "Safari fotografico e visite nei parchi naturali."
+    }
+  ],
+  "destinations": [
+    { "destination_id": 1, "destination_name": "Francia", "image": "francia.jpg" },
+    { "destination_id": 2, "destination_name": "Giappone", "image": "giappone.jpg" },
+    { "destination_id": 3, "destination_name": "Sudafrica", "image": "sudafrica.jpg" }
+  ],
+  "users_travel": [
+    { "travel_id": 1, "user_id": 1 },
+    { "travel_id": 2, "user_id": 2 },
+    { "travel_id": 3, "user_id": 3 }
+  ],
+  "users": [
+    {
+      "firstname": "Luca",
+      "lastname": "Bianchi",
+      "user_id": "1",
+      "mail": "luca.bianchi@example.com",
+      "phone_number": "+393312223344"
+    },
+    {
+      "firstname": "Elena",
+      "lastname": "Neri",
+      "user_id": "2",
+      "mail": "elena.neri@example.com",
+      "phone_number": "+393365554433"
+    },
+    {
+      "firstname": "Marco",
+      "lastname": "Romano",
+      "user_id": "3",
+      "mail": "marco.romano@example.com",
+      "phone_number": "+393478965432"
+    }
+  ],
+  "login_data": [
+    { "user_id": 1, "password": "password123", "user_type": "admin" },
+    { "user_id": 2, "password": "qwerty456", "user_type": "standard" },
+    { "user_id": 3, "password": "securepass789", "user_type": "standard" }
+  ]
+}
