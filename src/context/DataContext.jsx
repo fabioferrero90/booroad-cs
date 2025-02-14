@@ -2,7 +2,7 @@ import { useContext, createContext } from 'react';
 const DataContext = createContext();
 import db from '../data/db.json';
 
-const DataProvider = ({ children, }) => {
+const DataProvider = ({ children }) => {
 
   const data = JSON.parse(JSON.stringify(db));
 
@@ -10,7 +10,7 @@ const DataProvider = ({ children, }) => {
 
 
   return (
-    <DataContext.Provider value={value}>
+    <DataContext.Provider value={{data}}>
       {children}
     </DataContext.Provider>
   )
