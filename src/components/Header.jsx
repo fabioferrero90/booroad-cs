@@ -46,15 +46,6 @@ const Header = ({ headerMenu , adminHeaderMenu }) => {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
-          <div className="relative">
-            <button
-              type="button"
-              className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900"
-              aria-expanded="false"
-            >
-              Product
-            </button>
-          </div>
           {headerMenu.map((item, index) => (
             <button
             key= {index}
