@@ -1,11 +1,11 @@
 import { NavLink } from "react-router-dom";
-import { useDataContext } from "../context/DataContext"; 
+import { useDataContext } from "../context/DataContext";
 
-const Header = ({ headerMenu , adminHeaderMenu }) => {
+const Header = ({ headerMenu, adminHeaderMenu }) => {
   const { isAdmin } = useDataContext();
 
   return (
-    <header className="bg-white">
+    <header className="bg-blue-500">
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
@@ -46,28 +46,29 @@ const Header = ({ headerMenu , adminHeaderMenu }) => {
         <div className="hidden lg:flex lg:gap-x-12">
           {headerMenu.map((item, index) => (
             <button
-            key= {index}
-            type="button"
-            className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900"
-            aria-expanded="false"
-          >
+              key={index}
+              type="button"
+              className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900"
+              aria-expanded="false"
+            >
               <NavLink to={item.route} className="nav-link">
                 {item.name}
               </NavLink>
             </button>
           ))}
-          {isAdmin && adminHeaderMenu.map((item, index) => (
-            <button
-            key= {index}
-            type="button"
-            className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900"
-            aria-expanded="false"
-          >
-              <NavLink to={item.route} className="nav-link">
-                {item.name}
-              </NavLink>
-            </button>
-          ))}
+          {isAdmin &&
+            adminHeaderMenu.map((item, index) => (
+              <button
+                key={index}
+                type="button"
+                className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900"
+                aria-expanded="false"
+              >
+                <NavLink to={item.route} className="nav-link">
+                  {item.name}
+                </NavLink>
+              </button>
+            ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end"></div>
       </nav>

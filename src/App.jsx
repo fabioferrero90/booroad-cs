@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Travels from "./pages/Travels";
 import Customers from "./pages/Customers";
 import Users from "./pages/Users";
+import CustomerDetails from "./pages/CustomerDetails";
 
 const App = () => {
   return (
