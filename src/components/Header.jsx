@@ -1,4 +1,7 @@
 const Header = (headerMenu) => {
+
+  console.log(headerMenu);
+
   return (
     <header className="bg-white">
     <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
@@ -25,13 +28,13 @@ const Header = (headerMenu) => {
             </svg>
           </button>            
         </div>
-  
-        <a href="#" className="text-sm/6 font-semibold text-gray-900">Features</a>
-        <a href="#" className="text-sm/6 font-semibold text-gray-900">Marketplace</a>
-        <a href="#" className="text-sm/6 font-semibold text-gray-900">Company</a>
+        {headerMenu.map((item, index) => (
+          <li key={index} className="nav-item">
+            <NavLink to={item.route} className="nav-link">{item.name}</NavLink>
+          </li>
+        ))}
       </div>
       <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="#" className="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
       </div>
     </nav>
     <div className="lg:hidden" role="dialog" aria-modal="true">

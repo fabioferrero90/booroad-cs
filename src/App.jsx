@@ -9,7 +9,7 @@ const App = () => {
       <DataProvider>
         <BrowserRouter>
           <Routes>
-            <Route component={DefaultLayout}>
+            <Route Component={DefaultLayout}>
               <Route path="/" Component={Home} />
             </Route>
           </Routes>
