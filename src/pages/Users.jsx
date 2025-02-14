@@ -1,4 +1,17 @@
+import { useState } from "react";
+import UserModal from "../components/UserModal";
+
 const Users = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const openModal = () => {
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
+
   return (
     <>
       {/* gray bar */}
@@ -33,9 +46,13 @@ const Users = () => {
           <h2 className="text-white">MATTEO BIANCHI</h2>
         </div>
         <div className="rounded-lg bg-neutral-400 p-4 flex justify-center my-3">
-          <h2 className="text-white">AGGIUNGI ACCOMPAGNATORE</h2>
+          <h2 className="text-white" onClick={openModal}>
+            AGGIUNGI ACCOMPAGNATORE
+          </h2>
         </div>
       </div>
+
+      {showModal && <UserModal closeModal={closeModal} />}
     </>
   );
 };
