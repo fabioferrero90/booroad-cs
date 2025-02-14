@@ -7,7 +7,7 @@ const UserModal = ({ closeModal }) => {
         className="fixed inset-0 bg-black opacity-50"
         onClick={closeModal}
       ></div>
-      <div className="bg-blue-600 rounded-lg p-8 z-10 max-w-md w-full">
+      <div className="bg-blue-600 rounded-lg p-8 z-10 max-w-lg w-full">
         <h2 className="text-xl mb-4 text-white font-bold">
           Aggiungi Accompagnatore
         </h2>
