@@ -7,10 +7,12 @@ const DataProvider = ({ children }) => {
   const data = JSON.parse(JSON.stringify(db));
 
   console.log(data.users)
+  console.log(data.posts)
+
 
 
   return (
-    <DataContext.Provider value={{data}}>
+    <DataContext.Provider value={{ data }}>
       {children}
     </DataContext.Provider>
   )
