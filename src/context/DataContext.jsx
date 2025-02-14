@@ -7,7 +7,9 @@ const DataProvider = ({ children }) => {
   const data = JSON.parse(JSON.stringify(db));
 
   console.log(data.users)
-
+  if (data.user.length === 0){
+    console.log('No users found')
+  }
 
 
   return (
