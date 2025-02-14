@@ -1,13 +1,20 @@
 import CustomerDetails from "./CustomerDetails";
+import { useState } from "react";
 
 const contacts = [
-  { name: 'FRANCO ROSSETTI' },
-  { name: 'GIACOMO NICOLINI' },
-  { name: 'FRANCO ROSSETTI' },
-  { name: 'GIACOMO NICOLINI' },
+  { name: "FRANCO ROSSETTI" },
+  { name: "GIACOMO NICOLINI" },
+  { name: "FRANCO ROSSETTI" },
+  { name: "GIACOMO NICOLINI" },
 ];
 
 const Customers = () => {
+  const [selectedCustomer, setSelectedCustomer] = useState(null);
+
+  const handleCustomerClick = (customer) => {
+    setSelectedCustomer(customer);
+  };
+
   return (
     <div className="p-6 bg-white text-white">
       <div className="bg-white flex justify-between mb-4">
@@ -30,7 +37,10 @@ const Customers = () => {
       </div>
       <div>
         {contacts.map((contact, index) => (
-          <div key={index} className="flex items-center justify-between p-4 bg-gray-700 rounded mb-2">
+          <div
+            key={index}
+            className="flex items-center justify-between p-4 bg-gray-700 rounded mb-2"
+          >
             <span>{contact.name}</span>
             <div className="flex space-x-4">
               {/* mail */}
