@@ -30,7 +30,7 @@ const Users = () => {
           <h2 className="text-white">FRANCO ROSSI</h2>
         </div>
         <div className="rounded-lg bg-gray-700 p-4 flex justify-start my-3">
-          <h2 className="text-white">FRANCO ROSSI</h2>
+          <h2 className="text-white">MATTEO BIANCHI</h2>
         </div>
         <div className="rounded-lg bg-neutral-400 p-4 flex justify-center my-3">
           <h2 className="text-white">AGGIUNGI ACCOMPAGNATORE</h2>
