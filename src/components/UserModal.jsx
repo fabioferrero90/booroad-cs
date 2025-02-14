@@ -8,7 +8,9 @@ const UserModal = ({ closeModal }) => {
         onClick={closeModal}
       ></div>
       <div className="bg-blue-600 rounded-lg p-8 z-10 max-w-md w-full">
-        <h2 className="text-xl mb-4 text-white">Aggiungi Accompagnatore</h2>
+        <h2 className="text-xl mb-4 text-white font-bold">
+          Aggiungi Accompagnatore
+        </h2>
         <form className="space-y-4">
           <div>
             <input
