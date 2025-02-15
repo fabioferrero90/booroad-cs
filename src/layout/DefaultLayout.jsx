@@ -1,5 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Header from "../components/Header.jsx";
+import { useDataContext } from "../context/DataContext.jsx";
+import LoginPage from "../pages/LoginPage.jsx";
 
 const headerMenu = [
    { route: "/", name: "Home", key: "home" },
@@ -12,14 +14,23 @@ const adminHeaderMenu = [
 ]
 
 function DefaultLayout() {
-   return (
-      <>
-         <Header headerMenu={headerMenu} adminHeaderMenu={adminHeaderMenu}/>
-         <main>
-            <Outlet />
-         </main>
-      </>
-   )
+
+   const { isLoggedIn } = useDataContext();
+
+   if (!isLoggedIn) {
+      return (
+         <LoginPage />
+      )
+   } else {
+      return (
+         <>
+            <Header headerMenu={headerMenu} adminHeaderMenu={adminHeaderMenu}/>
+            <main>
+               <Outlet />
+            </main>
+         </>
+      )
+   }
 };
 
 export default DefaultLayout;

@@ -4,7 +4,7 @@ import TravelModal from "../components/TravelModal";
 import TravelDetails from "./TravelDetails";
 
 const Travels = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const [showModal, setShowModal] = useState(false);
   const [selectedTravel, setSelectedTravel] = useState(null);
 

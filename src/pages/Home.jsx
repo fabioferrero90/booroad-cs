@@ -1,7 +1,10 @@
+import Calendar from '../components/Calendar'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <Calendar/>
+    </div>
   )
 }
 
