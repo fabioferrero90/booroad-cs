@@ -6,7 +6,7 @@ const TravelDetails = () => {
       {/* Header */}
       <div className="bg-white shadow-lg rounded-lg p-6 mb-6">
         <div className="relative">
-          <img src="" alt="Banner" className="w-full h-64 object-cover rounded-t-lg" />
+          <img src="/destinations/japan.png" alt="Banner" className="w-full h-64 object-cover rounded-t-lg" />
           <div className="absolute top-0 left-0 p-6">
             <h1 className="text-4xl font-bold text-white">DETTAGLIO DI VIAGGIO: GIAPPONE - 17-20 Gennaio</h1>
             <div className="mt-2 flex space-x-4">

@@ -38,11 +38,26 @@
     }
   ],
   "travel_customers": [
-    { "travel_id": 1, "customer_id": 1 },
-    { "travel_id": 1, "customer_id": 2 },
-    { "travel_id": 2, "customer_id": 1 },
-    { "travel_id": 3, "customer_id": 3 },
-    { "travel_id": 3, "customer_id": 4 }
+    {
+      "travel_id": 1,
+      "customer_id": 1
+    },
+    {
+      "travel_id": 1,
+      "customer_id": 2
+    },
+    {
+      "travel_id": 2,
+      "customer_id": 1
+    },
+    {
+      "travel_id": 3,
+      "customer_id": 3
+    },
+    {
+      "travel_id": 3,
+      "customer_id": 4
+    }
   ],
   "travels": [
     {
@@ -54,8 +69,8 @@
     },
     {
       "id_viaggio": 2,
-      "start_date": "2025-07-05T09:00:00Z",
-      "end_date": "2025-07-07T21:00:00Z",
+      "start_date": "2025-02-05T09:00:00Z",
+      "end_date": "2025-02-12T21:00:00Z",
       "destination_id": 2,
       "abstract": "Tour guidato nelle zone storiche con esperienze culinarie locali."
     },
@@ -68,14 +83,35 @@
     }
   ],
   "destinations": [
-    { "destination_id": 1, "destination_name": "Francia", "image": "francia.jpg" },
-    { "destination_id": 2, "destination_name": "Giappone", "image": "giappone.jpg" },
-    { "destination_id": 3, "destination_name": "Sudafrica", "image": "sudafrica.jpg" }
+    {
+      "destination_id": 1,
+      "destination_name": "Francia",
+      "image": "france.png"
+    },
+    {
+      "destination_id": 2,
+      "destination_name": "Giappone",
+      "image": "japan.png"
+    },
+    {
+      "destination_id": 3,
+      "destination_name": "Sudafrica",
+      "image": "southafrica.png"
+    }
   ],
   "users_travel": [
-    { "travel_id": 1, "user_id": 1 },
-    { "travel_id": 2, "user_id": 2 },
-    { "travel_id": 3, "user_id": 3 }
+    {
+      "travel_id": 1,
+      "user_id": 1
+    },
+    {
+      "travel_id": 2,
+      "user_id": 2
+    },
+    {
+      "travel_id": 3,
+      "user_id": 3
+    }
   ],
   "users": [
     {
@@ -101,8 +137,20 @@
     }
   ],
   "login_data": [
-    { "user_id": 1, "password": "password123", "user_type": "admin" },
-    { "user_id": 2, "password": "qwerty456", "user_type": "standard" },
-    { "user_id": 3, "password": "securepass789", "user_type": "standard" }
+    {
+      "user_id": 1,
+      "password": "password123",
+      "user_type": "admin"
+    },
+    {
+      "user_id": 2,
+      "password": "qwerty456",
+      "user_type": "standard"
+    },
+    {
+      "user_id": 3,
+      "password": "securepass789",
+      "user_type": "standard"
+    }
   ]
 }

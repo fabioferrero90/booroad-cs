@@ -76,13 +76,14 @@ const Travels = () => {
                   );
 
                   return (
+
                     <div
                       key={travel.id_viaggio}
                       className="max-w-xs bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
                     >
                       <div
                         className="bg-cover h-48 rounded-t-lg"
-                        style={{ backgroundImage: `url(${destination.image})` }}
+                        style={{ backgroundImage: `url(destinations/${destination.image})` }}
                       ></div>
                       <div className="p-4">
                         <a href="#" onClick={() => handleTravelClick(travel)}>

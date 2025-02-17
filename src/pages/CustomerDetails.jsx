@@ -7,7 +7,7 @@ const CustomerDetails = () => {
         <div className="md:flex-shrink-0">
           <img
             className="h-48 w-full object-cover md:w-48"
-            src=""
+            src="/users/franco-rossi.png"
             alt="Franco Rossetti"
           />
         </div>
