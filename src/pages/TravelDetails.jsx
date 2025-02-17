@@ -181,7 +181,7 @@ const TravelDetails = () => {
           {/* aggiungi */}
           <div className="rounded-lg bg-neutral-400 p-4 flex justify-center my-3">
             <h2 className="text-white cursor-pointer" onClick={openModal}>
-              + AGGIUNGI ACCOMPAGNATORE
+              + AGGIUNGI VIAGGIATORE
             </h2>
           </div>
           {showModal && <UserModal closeModal={closeModal} />}
