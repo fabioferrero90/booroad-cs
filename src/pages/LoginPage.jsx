@@ -4,15 +4,23 @@ import { useDataContext } from '../context/DataContext';
 const LoginPage = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const {isLoggedIn, setIsLoggedIn} = useDataContext();
+  const { isLoggedIn, setIsLoggedIn } = useDataContext();
 
   const handleLogin = () => {
     setIsLoggedIn(true);
   };
 
   return (
+
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="bg-white p-8 rounded shadow-md w-full max-w-md">
+        <div className='w-auto flex justify-center'>
+          <img
+            className="h-17 w-auto"
+            src="/booroad_logo.png"
+            alt=""
+          />
+        </div>
         <h2 className="text-2xl font-bold mb-6 text-center">Accedi a BooRoad</h2>
         <form>
           <div className="mb-4">
@@ -36,7 +44,7 @@ const LoginPage = () => {
           <button
             type="button"
             onClick={handleLogin}
-            className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600"
+            className="w-full bg-emerald-400 text-white py-2 rounded hover:bg-emerald-400"
           >
             Accedi
           </button>

@@ -7,7 +7,7 @@ const UserModal = ({ closeModal }) => {
         className="fixed inset-0 bg-black opacity-50"
         onClick={closeModal}
       ></div>
-      <div className="bg-blue-600 rounded-lg p-8 z-10 max-w-lg w-full">
+      <div className="bg-emerald-400 rounded-lg p-8 z-10 max-w-lg w-full">
         <h2 className="text-xl mb-4 text-white font-bold">
           Aggiungi Accompagnatore
         </h2>
@@ -50,7 +50,7 @@ const UserModal = ({ closeModal }) => {
           </div>
           <button
             type="submit"
-            className="w-full text-white bg-blue-900 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-800 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            className="w-full text-white bg-emerald-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-emerald-700 dark:hover:bg-emerald-600 dark:focus:ring-blue-800"
           >
             Aggiungi
           </button>

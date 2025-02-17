@@ -32,7 +32,7 @@ const Travels = () => {
         <div>
           <button
             onClick={handleBackClick}
-            className="mb-4 p-2 bg-blue-500 rounded text-white"
+            className="mb-4 p-2 bg-emerald-400 rounded text-white"
           >
             Back
           </button>
@@ -44,7 +44,7 @@ const Travels = () => {
             <button
               id="dropdownDefaultButton"
               data-dropdown-toggle="dropdown"
-              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="text-white bg-emerald-600 hover:bg-emerald-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-emerald-400 dark:hover:bg-emerald-600 dark:focus:ring-blue-800"
               type="button"
               aria-expanded={isOpen ? "true" : "false"}
               onClick={toggleDropdown}
@@ -95,13 +95,13 @@ const Travels = () => {
                           {"  "}
                           {new Date(travel.end_date).toLocaleDateString()}
                         </p>
-                        <p className="mb-4 text-sm text-blue-300">
+                        <p className="mb-4 text-sm text-emerald-300">
                           {travel.abstract}
                         </p>
                         <a
                           href="#"
                           onClick={() => handleTravelClick(travel)}
-                          className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                          className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-emerald-600 rounded-lg hover:bg-emerald-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-emerald-400 dark:hover:bg-emerald-600 dark:focus:ring-blue-800"
                         >
                           Vedi Dettagli
                           <svg

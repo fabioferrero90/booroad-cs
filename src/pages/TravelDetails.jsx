@@ -10,8 +10,8 @@ const TravelDetails = () => {
           <div className="absolute top-0 left-0 p-6">
             <h1 className="text-4xl font-bold text-white">DETTAGLIO DI VIAGGIO: GIAPPONE - 17-20 Gennaio</h1>
             <div className="mt-2 flex space-x-4">
-              <button className="bg-blue-500 text-white px-4 py-2 rounded-md">FRANCO ROSSI</button>
-              <button className="bg-blue-500 text-white px-4 py-2 rounded-md">MATTEO BIANCHI</button>
+              <button className="bg-emerald-400 text-white px-4 py-2 rounded-md">FRANCO ROSSI</button>
+              <button className="bg-emerald-400 text-white px-4 py-2 rounded-md">MATTEO BIANCHI</button>
               <button className="bg-gray-500 text-white px-4 py-2 rounded-full">+</button>
             </div>
           </div>
@@ -59,7 +59,7 @@ const TravelDetails = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="size-8 bg-green-500 p-1 rounded-full text-white"
+              className="size-8 bg-emerald-400 p-1 rounded-full text-white"
             >
               <path
                 strokeLinecap="round"
@@ -74,7 +74,7 @@ const TravelDetails = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="size-8 bg-blue-400 p-1 rounded-full text-white"
+              className="size-8 bg-emerald-300 p-1 rounded-full text-white"
             >
               <path
                 strokeLinecap="round"
@@ -128,7 +128,7 @@ const TravelDetails = () => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="size-8 bg-green-500 p-1 rounded-full text-white"
+                className="size-8 bg-emerald-400 p-1 rounded-full text-white"
               >
                 <path
                   strokeLinecap="round"
@@ -143,7 +143,7 @@ const TravelDetails = () => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="size-8 bg-blue-400 p-1 rounded-full text-white"
+                className="size-8 bg-emerald-300 p-1 rounded-full text-white"
               >
                 <path
                   strokeLinecap="round"

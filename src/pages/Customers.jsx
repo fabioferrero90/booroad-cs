@@ -86,7 +86,7 @@ const Customers = () => {
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="size-8 bg-green-500 p-1 rounded-full text-white"
+                    className="size-8 bg-emerald-400 p-1 rounded-full text-white"
                   >
                     <path
                       strokeLinecap="round"
@@ -101,7 +101,7 @@ const Customers = () => {
                     viewBox="0 0 24 24"
                     strokeWidth={1.5}
                     stroke="currentColor"
-                    className="size-8 bg-blue-400 p-1 rounded-full text-white"
+                    className="size-8 bg-emerald-300 p-1 rounded-full text-white"
                   >
                     <path
                       strokeLinecap="round"
