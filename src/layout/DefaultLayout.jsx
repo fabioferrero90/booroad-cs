@@ -4,7 +4,6 @@ import { useDataContext } from "../context/DataContext.jsx";
 import LoginPage from "../pages/LoginPage.jsx";
 
 const headerMenu = [
-   { route: "/", name: "Home", key: "home" },
    { route: "/travels", name: "Viaggi", key: "travels" },
    { route: "/customers", name: "Anagrafiche Clienti", key: "customers" },
 ];

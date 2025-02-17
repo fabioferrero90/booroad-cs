@@ -1,8 +1,9 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { useDataContext } from "../context/DataContext";
 
 const Header = ({ headerMenu, adminHeaderMenu }) => {
   const { isAdmin } = useDataContext();
+  const navigate = useNavigate();
 
   return (
     <header className="bg-emerald-400">
@@ -17,6 +18,7 @@ const Header = ({ headerMenu, adminHeaderMenu }) => {
               className="h-17 w-auto"
               src="/booroad_logo.png"
               alt=""
+              onClick={() => navigate("/")}
             />
           </a>
         </div>
