@@ -68,7 +68,7 @@ const Travels = () => {
           </div>
 
           {isOpen && (
-            <div className="max-w-400 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <div className="max-w-400 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 flex justify-center">
               <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-4">
                 {travels.map((travel) => {
                   const destination = destinations.find(
