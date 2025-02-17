@@ -1,4 +1,4 @@
-const CustomerDetails = () => {
+const UserDetails = () => {
   return (
     <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
       <div className="md:flex">
@@ -11,11 +11,8 @@ const CustomerDetails = () => {
         </div>
         <div className="p-8">
           <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
-            Franco Rossetti
+            Franco Rossi
           </div>
-          <p className="block mt-1 text-lg leading-tight font-medium text-black">
-            Cod. Fiscale: ABCD123PDCD
-          </p>
           <div className="mt-2 text-gray-500">
             <p>
               <span className="font-semibold">Contatti:</span>
@@ -42,7 +39,7 @@ const CustomerDetails = () => {
 
             {/* mail */}
             <p>
-              francorossetti@libero.com
+              francorossi@libero.com
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -79,7 +76,7 @@ const CustomerDetails = () => {
             </p>
           </div>
           <div className="mt-4">
-            <p className="font-semibold">Viaggi a cui hai partecipato:</p>
+            <p className="font-semibold">Viaggi gestiti:</p>
             <ul className="list-disc list-inside">
               <li>GIAPPONE from 25/01 to 29/01</li>
               <li>FRANCIA from 23/02 to 03/03</li>
@@ -91,4 +88,4 @@ const CustomerDetails = () => {
   );
 };
 
-export default CustomerDetails;
+export default UserDetails;
