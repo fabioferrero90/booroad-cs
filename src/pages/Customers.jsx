@@ -27,7 +27,7 @@ const Customers = () => {
             onClick={handleBackClick}
             className="mb-4 p-2 bg-red-500 rounded text-white"
           >
-            Back
+            Indietro
           </button>
           <CustomerDetails customer={selectedCustomer} />
         </div>

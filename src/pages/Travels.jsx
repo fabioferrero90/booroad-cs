@@ -34,7 +34,7 @@ const Travels = () => {
             onClick={handleBackClick}
             className="mb-4 p-2 bg-emerald-400 rounded text-white"
           >
-            Back
+            Indietro
           </button>
           <TravelDetails travel={selectedTravel} />
         </div>
@@ -76,14 +76,15 @@ const Travels = () => {
                   );
 
                   return (
-
                     <div
                       key={travel.id_viaggio}
                       className="max-w-xs bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
                     >
                       <div
                         className="bg-cover h-48 rounded-t-lg"
-                        style={{ backgroundImage: `url(destinations/${destination.image})` }}
+                        style={{
+                          backgroundImage: `url(destinations/${destination.image})`,
+                        }}
                       ></div>
                       <div className="p-4">
                         <a href="#" onClick={() => handleTravelClick(travel)}>
