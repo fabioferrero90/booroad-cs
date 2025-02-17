@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { useState, useEffect } from 'react';
 import { it } from 'date-fns/locale';
 import { format, startOfMonth, endOfMonth, eachDayOfInterval, isSameDay, addMonths, subMonths, isBefore, isAfter, isWithinInterval } from 'date-fns';
 import { useDataContext } from '../context/DataContext'; // Ensure the correct import for useDataContext
@@ -34,7 +35,7 @@ const Calendar = () => {
         }
       }
 
-      if (isWithinInterval(day, { start: (startDate - (24*60*60*1000)), end: endDate })) {
+      if (isWithinInterval(day, { start: (startDate - (24 * 60 * 60 * 1000)), end: endDate })) {
         return (
           <div
             key={`${index}-${format(day, 'yyyy-MM-dd')}`}
@@ -60,7 +61,7 @@ const Calendar = () => {
     <div className="calendar p-4 relative">
       <div className="flex justify-between items-center mb-4">
         <button onClick={handlePreviousMonth} className="bg-gray-300 text-gray-800 p-2 rounded cursor-pointer">Precedente</button>
-        <h2 className="text-2xl font-bold">{format(currentDate, 'MMMM yyyy', {locale: it})}</h2>
+        <h2 className="text-2xl font-bold">{format(currentDate, 'MMMM yyyy', { locale: it })}</h2>
         <button onClick={handleNextMonth} className="bg-gray-300 text-gray-800 p-2 rounded cursor-pointer">Successivo</button>
       </div>
       <div className="calendar-grid grid grid-cols-7 gap-4 relative">
