@@ -1,4 +1,5 @@
 import { useState } from "react";
+import UserModal from "../components/UserModal";
 
 const TravelDetails = () => {
   const [showModal, setShowModal] = useState(false);
