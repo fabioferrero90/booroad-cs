@@ -79,8 +79,8 @@ const CustomerDetails = () => {
             </p>
           </div>
           <div className="mt-4">
-            <p className="font-semibold">Viaggi a cui hai partecipato:</p>
-            <ul className="list-disc list-inside">
+            <p className="font-semibold text-black">Viaggi a cui hai partecipato:</p>
+            <ul className="list-disc list-inside text-black">
               <li>GIAPPONE from 25/01 to 29/01</li>
               <li>FRANCIA from 23/02 to 03/03</li>
             </ul>
