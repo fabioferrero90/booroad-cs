@@ -1,6 +1,14 @@
 import { useState } from "react";
 
 const TravelDetails = () => {
+  const [showModal, setShowModal] = useState(false);
+  const openModal = () => {
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
   return (
     <div className="min-h-screen bg-gray-100 p-6">
       {/* Header */}
@@ -169,15 +177,13 @@ const TravelDetails = () => {
             </div>
           </div>
 
-          {/* Dropdown Menu */}
-          <div className="bg-white shadow-lg rounded-lg p-6 mb-6">
-            <label htmlFor="traveler-search" className="block text-lg font-bold mb-2">SELEZIONA O CERCA DALLA LISTA</label>
-            <select id="traveler-search" className="w-full bg-gray-100 border border-gray-300 px-4 py-2 rounded-md">
-              <option value="">Seleziona un viaggiatore</option>
-              <option value="giacomo">Giacomo Nicolini</option>
-              <option value="franco">Franco Rossetti</option>
-            </select>
+          {/* aggiungi */}
+          <div className="rounded-lg bg-neutral-400 p-4 flex justify-center my-3">
+            <h2 className="text-white cursor-pointer" onClick={openModal}>
+              + AGGIUNGI ACCOMPAGNATORE
+            </h2>
           </div>
+          {showModal && <UserModal closeModal={closeModal} />}
         </div>
       </div>
     </div>
