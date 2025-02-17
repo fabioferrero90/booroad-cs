@@ -1,11 +1,12 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { it } from 'date-fns/locale';
 import { format, startOfMonth, endOfMonth, eachDayOfInterval, isSameDay, addMonths, subMonths, isBefore, isAfter, isWithinInterval } from 'date-fns';
 import { useDataContext } from '../context/DataContext'; // Ensure the correct import for useDataContext
+import { useNavigate } from 'react-router-dom';
 
 const Calendar = () => {
 
+  const navigate = useNavigate();
   const { data } = useDataContext();
   const { travels } = data;
   const [currentDate, setCurrentDate] = useState(new Date());
@@ -40,6 +41,7 @@ const Calendar = () => {
           <div
             key={`${index}-${format(day, 'yyyy-MM-dd')}`}
             className="bg-green-200 text-green-800 p-1 rounded mb-1 cursor-pointer"
+            onClick={() => navigate('/traveldetails')}
           >
             {destinationName}
           </div>
